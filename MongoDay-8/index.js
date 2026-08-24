@@ -91,8 +91,5 @@ const User=mongoose.model("User", userSchema);
 // User.findOneAndUpdate({name:"raheel"},{age: 18},{new:true}).then((res)=>{
 //     console.log(res);   //{new:true} ya direct show krna k liya use krta hain
     
-// }).catch((err)=>{
-//     console.log(err);
-    
-// })
+
 
