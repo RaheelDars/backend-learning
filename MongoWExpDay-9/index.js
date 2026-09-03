@@ -6,12 +6,13 @@ const Chat=require("./models/chat.js")
 const methodoverride=require("method-override");
 
 app.set("views",path.join(__dirname,"views"));
-app.set("views engine","ejs");
+app.set("view engine","ejs");
 app.use(express.static(path.join(__dirname,"public")))
 app.use(express.urlencoded({ extended: true }));
 app.use(methodoverride("_method"))
 
-app.listen(8080,()=>{
+const PORT = process.env.PORT || 8080;
+app.listen(PORT,()=>{
     console.log("server is listenging");
     
 });
